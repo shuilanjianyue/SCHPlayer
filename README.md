@@ -39,6 +39,8 @@ SCHPlayerView *playerView = [[SCHPlayerView alloc] initWithFrame:CGRectMake(0, 9
     }];
 
 #注意一定要销毁
+
+
 //销毁播放器
  -(void)dealloc{
     
