@@ -5,7 +5,7 @@ OC封装的播放器支持横屏竖屏，播放时间，总时间，暂停／播
 AVFoundation.framework
 
 #用法以及默认设置
-/**SCHPlayerView*/
+
 @property (nonatomic,weak) SCHPlayerView *playerView;
 
 SCHPlayerView *playerView = [[SCHPlayerView alloc] initWithFrame:CGRectMake(0, 90, self.view.frame.size.width, 300)];
