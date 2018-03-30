@@ -2,10 +2,12 @@
 OC封装的播放器支持横屏竖屏，播放时间，总时间，暂停／播放  简单好用
 
 #用到的框架
+
 AVFoundation.framework
 
 #用法以及默认设置
 
+//
 @property (nonatomic,weak) SCHPlayerView *playerView;
 
 SCHPlayerView *playerView = [[SCHPlayerView alloc] initWithFrame:CGRectMake(0, 90, self.view.frame.size.width, 300)];
@@ -37,7 +39,8 @@ SCHPlayerView *playerView = [[SCHPlayerView alloc] initWithFrame:CGRectMake(0, 9
     }];
 
 #注意一定要销毁
-- (void)dealloc{
+//销毁播放器
+ -(void)dealloc{
     
     NSLog(@"播放器销毁了");
     
