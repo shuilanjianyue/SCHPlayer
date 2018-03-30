@@ -7,10 +7,9 @@ AVFoundation.framework
 
 #用法以及默认设置
 
-//
-@property (nonatomic,weak) SCHPlayerView *playerView;
+    @property (nonatomic,weak) SCHPlayerView *playerView;
 
-SCHPlayerView *playerView = [[SCHPlayerView alloc] initWithFrame:CGRectMake(0, 90, self.view.frame.size.width, 300)];
+    SCHPlayerView *playerView = [[SCHPlayerView alloc] initWithFrame:CGRectMake(0, 90, self.view.frame.size.width, 300)];
     [self.view addSubview:_playerView];
     
     //当前Xcode是否勾选了旋转，告知播放器 默认为NO
@@ -41,11 +40,11 @@ SCHPlayerView *playerView = [[SCHPlayerView alloc] initWithFrame:CGRectMake(0, 9
 #注意一定要销毁
 
 
-//销毁播放器
- -(void)dealloc{
+     //销毁播放器
+    -(void)dealloc{
     
     NSLog(@"播放器销毁了");
     
     [_playerView destroyPlayer];
     
-}
+    }
